@@ -12,58 +12,107 @@
       .container {
         background-color: white;
       }
+
       .header {
         display: flex;
         justify-content: space-between;
         background-color: orange;
       }
-      .header1{
+
+      .header ul {
+        list-style: none;
         display: flex;
-        justify-content: right;
-        background-color: orange;
       }
-      .row {
-        display: flex;
-        justify-content: center;
-        background-color: silver;
-      }
-      .col {
-        display: flex;
-        justify-content: right;
-        background-color: silver;
-      }
-      .col1 {
-        display: flex;
-        justify-content: left;
-        background-color: silver;
-      }
-      .box1 {
-        justify-content:left;
-        margin: 200px;
-        padding: 5px;
-        flex:2;
-        margin-left: 10px;
-        flex-direction: column;
-        text-align: left;
-        color: brown;
-      }
-      
-      .box {
-        background-color: white;
-        margin: 20px;
-        padding: 10px;
-      }
-      li {
-        display:inline-block;
+
+      .header li {
+        display: inline-block;
         padding: 10px;
         font-size: larger;
       }
-      a{
+
+      .header a {
         text-decoration: none;
       }
-      a:hover {
+
+      .header a:hover {
         text-decoration: underline;
       }
+
+      .row {
+        display: flex;
+        justify-content: left;
+        background-color: silver;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        background-color: white;
+        margin: 20px;
+        width: 300px;
+      }
+
+      .product {
+        padding: 10px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .row .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Adjusting the second row (image left, info right) */
+      .row-second {
+        display: flex;
+        justify-content:left;
+        align-items: center;
+        background-color: silver;
+      }
+
+      .row-second .box {
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: center;
+        align-items: center;
+       width: 300px
+      }
+
+      .row-second .box .product {
+        padding: 10px;
+        width: 300px;
+        text-align: left;
+      }
+
+      .row-second .box img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* Adjusting the third row (info left, image right) */
+      .row-third {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: silver;
+      }
+      .row-second1 {
+        display: flex;
+        justify-content:left;
+        align-items: center;
+        background-color: silver;
+      }
+.i {
+    display:flex;
+    justify-content:left;
+    align-items: left;
+    background-color: silver;
+}
+    
     </style>
   </head>
   <body>
@@ -79,58 +128,71 @@
           </ul>
         </div>
       </div>
+
+      <!-- First Row: 3 Images -->
       <div class="row">
         <div class="box">
           <img src="assets/images/1.png" />
-          <h2>Product 1</h2>
-          <p>This is the description of the product.</p>
-          <h3>Rs 230</h3>
-          <button>Add to Cart</button>
+          <div class="product">
+            <h2>Product 1</h2>
+            <p>This is the description of the product.</p>
+            <h3>Rs 230</h3>
+            <button>Add to Cart</button>
+          </div>
         </div>
         <div class="box">
           <img src="assets/images/2.png" />
-          <h2>Product 2</h2>
-          <p>This is the description of the product.</p>
-          <h3>Rs 200</h3>
-          <button>Add to Cart</button>
+          <div class="product">
+            <h2>Product 2</h2>
+            <p>This is the description of the product.</p>
+            <h3>Rs 200</h3>
+            <button>Add to Cart</button>
+          </div>
         </div>
         <div class="box">
           <img src="assets/images/3.png" />
-          <h2>Product 3</h2>
-          <p>This is the description of the product.</p>
-          <h3>Rs 375</h3>
-          <button>Add to Cart</button>
+          <div class="product">
+            <h2>Product 3</h2>
+            <p>This is the description of the product.</p>
+            <h3>Rs 375</h3>
+            <button>Add to Cart</button>
+          </div>
         </div>
       </div>
-    </div>
-        <div class="col1">
-        <div class="box">
-        <img src="assets/images/4.png"/>
-        <p>This is the description of the product.</p>
-        <h3>Rs 200</h3>
-        <button>Add to Cart</button>
-        </div>
-        <div class="box1">
-            <h3>A cup is a small, typically cylindrical container used for drinking liquids. It often has a handle and is made from materials like ceramic, glass, or plastic..</h3>
-        </div>
-    </div>
-    </div>
-</div>
 
-    <div class="col">
-        <div class="box1">
-            <h3>Indian Estates Blend is a rich, aromatic coffee crafted from beans grown in India's diverse coffee regions. It offers a balanced flavor profile with mild acidity, earthy undertones, and a smooth finish.</h3>
-            </div>
+      <!-- Second Row: Image on Left, Info on Right -->
+      <div class="row-second1">
         <div class="box">
-    <img src="assets/images/5.png"/>
-    <p>This is the description of the product.</p>
-    <h3>Rs 200</h3>
-    <button>Add to Cart</button>
-    </div>
-</div>
+          <img src="assets/images/4.png" />
+          <div class="product">
+            <h2>Product 4</h2>
+            <p>This is the description of the product.</p>
+            <h3>Rs 375</h3>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <p>An online store is a website, app or platform that helps businesses sell their products or services digitally.
+            Online stores offer convenience, accessibility, and often a wider range of products than bricks-and
+mortar stores, allowing customers to browse, place orders, and make payments virtually.</p></div>
     
-</div>
-</div>
 
+      </div>
+      <div class="row-third">
+        <div class="i">
+<p>An online store is a website, app or platform that helps businesses sell their products or services digitally.
+             Online stores offer convenience, accessibility, and often a wider range of products than bricks-and
+mortar stores, allowing customers to browse, place orders, and make payments virtually.</p></div>
+        <div class="box">
+          <img src="assets/images/4.png" />
+          <div class="product">
+            <h2>Product 4</h2>
+            <p>This is the description of the product.</p>
+            <h3>Rs 375</h3>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      
   </body>
 </html>
